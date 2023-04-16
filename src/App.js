@@ -1,22 +1,17 @@
-import  React, { useEffect, useState} from 'react';
+import  React from 'react';
 import './App.css';
 import api from './api';
+import UserLista from './components/UserLista';
+import Header from './components/Header';
+import SearchList from './components/SearchList'
 
 function App() {
 
-  const [listaUsers, setListaUsers] = useState([]);
-
-  useEffect( () => {
-    api.get('usuarios').then(({data}) => {
-      setListaUsers(data)
-    });
-    console.log(listaUsers);
-    // eslint-disable-next-line
-  }, ['']);
-
-  return (
+    return (
     <div className="App">
-      <h1>Lista de Usuários</h1>
+      <Header />
+      <SearchList prop={api} />
+      <UserLista />
     </div>
   );
 }
