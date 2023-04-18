@@ -1,16 +1,5 @@
 body {
-  background-color: #0F172A;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background: #0F172A;
 }
 
 .header_container {
@@ -21,8 +10,8 @@ code {
   background-color: #0F172A;
   border-bottom: solid;
   border-color: rgb(51 65 85);
-  color: rgb(255 255 255);
-  font-size: 30px; 
+  color: #ffffff;
+  font-size: 18px; 
   height: 5rem;
   width: 100%;
 }
@@ -47,18 +36,33 @@ code {
   top: 50%;
   left: 12px;
   margin-top: -10px;
+  pointer-events: none; 
 }
 
 .search__input {
-  height: 100%;
-  width:100%;
+  padding-top: 8px;
+  padding-bottom: 8px; 
+  padding-left: 40px; 
+  font-size: 14px;
+  line-height: 1.25rem; 
+  line-height: 1.5rem; 
+  width: 100%; 
+  border-radius: 6px;  
+  appearance: none; 
 }
 
 .search__btn {
-  border-color: blue;
-  background-color: #0F172A;
-  color: white;
-  padding: 1px;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+  padding-top: 8px;
+  padding-bottom: 8px; 
+  padding-left: 12px;
+  padding-right: 12px; 
+  font-size: 16px;
+  line-height: 1.5rem; 
+  font-weight: 500; 
+  border-radius: 0.5rem; 
+  --tw-bg-opacity: 1;
 }
 
 .table__container {
