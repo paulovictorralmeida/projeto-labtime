@@ -15,15 +15,34 @@ function  UserLista() {
 
   return (
     <div className="UserLista">
-      <div className="table__container">
-        {listaUsers.map(user => (
-          <li key={user.codigo}>
-            <b>Nome:</b>{user.nomeCompleto}<br/>
-            <b>Nome Social:</b>{user.nomeSocial}<br/>
-            <b>Email:</b>{user.email}<br/>
-          </li>
-        ))};
-      </div>
+      <table className="table__style">
+        <thead>
+          <tr>
+          <th>Nome Completo</th>
+          <th>Nome Social</th>
+          <th>Data de Nascimento</th>
+          <th>Sexo</th>
+          <th>Email</th>
+          <th>Estado</th>
+          <th>Municipio</th>
+          <th>Situacao</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.values(listaUsers).map(users => (
+            <tr key={users.codigo}>
+              <td>{users.nomeCompleto}</td>
+              <td>{users.nomeSocial}</td>
+              <td>{users.dataDeNascimento}</td>
+              <td>{users.sexo}</td>
+              <td>{users.email}</td>
+              <td>{users.estado}</td>
+              <td>{users.municipio}</td>
+              <td>{users.situacao}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
