@@ -83,13 +83,14 @@ body {
 th { 
   background-color: #ffd219; 
   color: #3e3e3e; 
-  padding: 7px; 
+  padding: 5px; 
 }
 
 td { 
   background-color: #f6f6f6; 
   color: #3e3e3e; 
-  padding: 5px; 
+  padding: 3px;
+  text-align: center;
 }
 
 //Responsivo
