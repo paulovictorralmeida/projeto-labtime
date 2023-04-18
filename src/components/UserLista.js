@@ -24,8 +24,9 @@ function  UserLista() {
           <th>Sexo</th>
           <th>Email</th>
           <th>Estado</th>
-          <th>Municipio</th>
-          <th>Situacao</th>
+          <th>Município</th>
+          <th>Situação</th>
+          <th>Número de acessos </th>
           </tr>
         </thead>
         <tbody>
@@ -39,6 +40,7 @@ function  UserLista() {
               <td>{users.estado}</td>
               <td>{users.municipio}</td>
               <td>{users.situacao}</td>
+              <td>{users.numeroDeAcessos}</td>
             </tr>
           ))}
         </tbody>
