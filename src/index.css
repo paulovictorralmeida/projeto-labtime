@@ -91,3 +91,17 @@ td {
   color: #3e3e3e; 
   padding: 5px; 
 }
+
+//Responsivo
+@media(max-width: 280px) {
+  
+}
+
+@media(max-width: 768px) {
+  
+}
+
+@media(max-width: 768px) {
+  
+}
+
