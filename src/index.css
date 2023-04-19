@@ -82,8 +82,12 @@ td {
   text-align: center;
 }
 
-@media(max-width: 280px) {
-  
+@media(max-width: 1200px) {
+  .UserLista {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+  }
 }
 
 @media(max-width: 768px) {
