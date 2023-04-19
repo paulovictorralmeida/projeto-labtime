@@ -66,14 +66,17 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+tbody tr:nth-child(2n) {
+  background: #ccc;
+}
+
 th { 
   background-color: #ffd219; 
   color: #3e3e3e; 
   padding: 5px; 
 }
 
-td { 
-  background-color: #f6f6f6; 
+td {  
   color: #3e3e3e; 
   padding: 3px;
   text-align: center;
