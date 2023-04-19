@@ -10,7 +10,6 @@ const SearchList = ({valor, hc}) => {
             </svg>
             <input className="search__input" type="text" aria-label="Digite sua busca" placeholder="Digite sua busca..." value={valor} onChange={hc}/>
         </form>
-        <button onClick={() => {}} className="search__btn">Buscar</button>
     </div>
   )
 }
