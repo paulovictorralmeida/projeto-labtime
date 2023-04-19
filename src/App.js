@@ -1,13 +1,19 @@
-import  React from 'react';
+import  React, { useState } from 'react';
 import './App.css';
-import api from './api';
-import SearchList from './components/SearchList'
+import SearchList from './components/SearchList';
+import UserLista from './components/UserLista';
 
 function App() {
+  const [valor, setValor] = useState('');
 
-    return (
+  const handleChange = (event) => {
+    setValor(event.target.value);
+  };
+
+  return (
     <div className="App">
-      <SearchList prop={api} />
+      <SearchList valor={valor} hc={handleChange} />
+      <UserLista valor={valor} />
     </div>
   );
 }

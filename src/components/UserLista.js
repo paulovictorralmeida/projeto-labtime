@@ -1,17 +1,17 @@
 import  React, { useEffect, useState} from 'react';
 import api from '../api';
 
-function  UserLista() {
+function  UserLista({valor}) {
 
   const [listaUsers, setListaUsers] = useState([]);
 
   useEffect( () => {
-    api.get('/usuarios').then(({data}) => {
+    api.get('/usuarios', {params: {filtro: valor}}).then(({data}) => {
       setListaUsers(data)
     });
     console.log(listaUsers);
     // eslint-disable-next-line
-  });
+  }, [valor]);
 
   return (
     <div className="UserLista">
