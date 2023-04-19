@@ -84,17 +84,40 @@ td {
 
 @media(max-width: 1200px) {
   .UserLista {
-    width: 100%;
-    overflow-x: auto;
+    display: flex;
+    justify-content: center;
     padding: 10px;
   }
 }
 
-@media(max-width: 768px) {
-  
+@media(max-width: 970px) {
+  .UserLista {
+    display: block;
+    justify-content: center;
+  }
 }
 
-@media(max-width: 1024px) {
-  
+@media(max-width: 360px) {
+  .header_container {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    background-color: #0F172A;
+    border-bottom: solid;
+    border-color: rgb(51 65 85);
+    color: #ffffff;
+    font-size: 18px; 
+    height: 5rem;
+    width: 100%;
+  }
+
+  .search_list__container {
+    display: flex;
+    align-items: center;
+    background-color: #0F172A;
+    margin-top: 4rem; 
+    margin-bottom: 4rem;
+    padding: 10px;
+  }
 }
 
