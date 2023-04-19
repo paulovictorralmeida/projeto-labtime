@@ -18,6 +18,7 @@ function  UserLista() {
       <table className="table__style">
         <thead>
           <tr>
+          <th>Código</th>
           <th>Nome Completo</th>
           <th>Nome Social</th>
           <th>Data de Nascimento</th>
@@ -32,6 +33,7 @@ function  UserLista() {
         <tbody>
           {Object.values(listaUsers).map(users => (
             <tr key={users.codigo}>
+              <td>{users.codigo}</td>
               <td>{users.nomeCompleto}</td>
               <td>{users.nomeSocial}</td>
               <td>{users.dataDeNascimento}</td>
