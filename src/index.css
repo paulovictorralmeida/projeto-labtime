@@ -62,10 +62,6 @@ body {
   justify-content: center;
 }
 
-.table__responsive {
-  overflow-y: auto;
-}
-
 .table__style {
   background-color: rgb(230, 230, 230);
 }
