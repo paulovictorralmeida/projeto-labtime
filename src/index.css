@@ -58,16 +58,28 @@ body {
 }
 
 .UserLista {
-  display: flex;
-  justify-content: center;
+  max-height: 665px;
+  overflow-y: auto;
+  margin: 0 50px;
 }
 
 .table__style {
   background-color: rgb(230, 230, 230);
+  width: 100%;
+  position: relative;
+}
+
+thead > tr > th {
+  position: sticky;
+  top: 0;
 }
 
 tbody tr:nth-child(2n) {
   background: #ccc;
+}
+
+tr:hover {
+  background-color: #f7f5f5;
 }
 
 th { 
@@ -84,9 +96,6 @@ td {
 
 @media(max-width: 1200px) {
   .UserLista {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
     overflow-x: auto;
   }
 }
@@ -120,5 +129,8 @@ td {
     margin-bottom: 4rem;
     padding: 10px;
   }
-}
 
+  .UserLista {
+    margin: 0 10px;
+  }
+}
